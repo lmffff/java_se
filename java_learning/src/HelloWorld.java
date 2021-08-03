@@ -5,6 +5,6 @@ public class HelloWorld {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
 //        String input = "Hello world!";
-        System.out.println(input);    //20:46
+        System.out.println(input);    //20:54
     }
 }
