@@ -1,5 +1,5 @@
 
-// use random class to output a number (0,10)
+// use random class to output a number (0,10) 
 import java.util.Random;
 
 
