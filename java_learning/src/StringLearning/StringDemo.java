@@ -1,3 +1,5 @@
+package StringLearning;
+
 //创建字符串对象，并输出
 public class StringDemo {
     public static void main(String[] args) {
