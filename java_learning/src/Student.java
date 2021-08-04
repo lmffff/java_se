@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//定义一个标准类，包括成员函数、成员变量（私有）、构造方法、成员方法
+//定义一个标准类，包括成员函数、成员变量（私有）、构造方法、成员方法  20210804
 public class Student {
     private String name;
     private int age;
