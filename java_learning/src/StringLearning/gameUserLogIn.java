@@ -4,7 +4,7 @@ import com.sun.jdi.PathSearchingVirtualMachine;
 
 import java.util.Scanner;
 
-public class gameUserLogIn {
+public class gameUserLogIn {    //10:34
     public static void main(String[] args) {
         String username = "liu";
         String password = "123456";
