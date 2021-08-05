@@ -6,6 +6,6 @@ import java.util.Random;
 public class RandomNumber {
     public static void main(String[] args) {
         Random ra = new Random();
-        System.out.println(ra.nextInt(10));
+        System.out.println(ra.nextInt(10));  //10:36
     }
 }
