@@ -25,7 +25,7 @@ public class StringDemo {
 //            System.out.println(str1.charAt(i));
 //        }
 
-          //
+          //StringBuilder
         StringBuilder sb = new StringBuilder();
         System.out.println("sb:" +  sb);
         StringBuilder sb1 = new StringBuilder("abc");
