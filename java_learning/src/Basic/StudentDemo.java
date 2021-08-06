@@ -1,3 +1,5 @@
+package Basic;
+
 //标准类的调用
 public class StudentDemo {
     public static void main(String[] args) {
