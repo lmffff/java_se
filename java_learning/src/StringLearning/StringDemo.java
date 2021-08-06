@@ -19,13 +19,16 @@ public class StringDemo {
 
 
 
-        //遍历字符串
-        String str1 = "abcde";
-        for(int i = 0;i < str1.length(); i++){
-            System.out.println(str1.charAt(i));
-        }
+//        //遍历字符串
+//        String str1 = "abcde";
+//        for(int i = 0;i < str1.length(); i++){
+//            System.out.println(str1.charAt(i));
+//        }
 
-
-
+          //
+        StringBuilder sb = new StringBuilder();
+        System.out.println("sb:" +  sb);
+        StringBuilder sb1 = new StringBuilder("abc");
+        System.out.println("sb1:" + sb1);
     }
 }
