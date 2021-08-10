@@ -1,7 +1,7 @@
 package ClassExtends;
 
 public class Dog extends Animal {
-    public static String className ;
+    public static String className = "dog";
     public String name;
     public Dog(){
         legsCount = 4;
@@ -16,7 +16,10 @@ public class Dog extends Animal {
         System.out.println(this.className);
         System.out.println("belongs to " + super.className);
     }
-
+    @Override
+    public void eat(){
+        System.out.println("狗吃肉");
+    }
     public void spark(){
         System.out.println("汪汪！");
     }
