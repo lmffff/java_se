@@ -2,6 +2,7 @@ package ClassExtends;
 
 public class Animal {
     public int legsCount;
+    public String className = "animal";
     private boolean canRun;
 
     public int getLegsCount() {
