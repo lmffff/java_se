@@ -25,10 +25,29 @@ public class StringDemo {
 //            System.out.println(str1.charAt(i));
 //        }
 
-          //StringBuilder
+          //StringBuilder append reverse
         StringBuilder sb = new StringBuilder();
         System.out.println("sb:" +  sb);
         StringBuilder sb1 = new StringBuilder("abc");
         System.out.println("sb1:" + sb1);
+        System.out.println("sb1:" + sb1.reverse());
+        sb1.append(" stringBuilder append");
+        System.out.println("sb1:"+sb1);
+
+
+        // StringBuilder<-->String
+        String s5 = sb1.toString();
+        System.out.println("s5:"+s5);
+
+        String s6 = "HELLO";
+        StringBuilder sb2 = new StringBuilder(s6);
+        System.out.println("s6:"+s6 + " sb2:"+sb2);
+
+
+
+
+
+
+
     }
 }
