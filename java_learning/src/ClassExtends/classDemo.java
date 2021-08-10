@@ -16,7 +16,7 @@ public class classDemo {
         System.out.println("dog3 className: "+dog3.className);
         dog3.eat();   //子类 狗吃肉
 //        dog3.spark();    //   报错！！ 子类特有
-        Dog d = (Dog) dog3;   //强制向下转换
+        Dog d = (Dog) dog3;   //向下转型
         d.spark();
     }
 }
