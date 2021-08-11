@@ -1,7 +1,8 @@
 package ClassExtends;
 
-public class Animal {
-    public int legsCount;
+public abstract class Animal {
+    public String name;
+    public int age;
     public static String className = "animal" ;
 
 
@@ -10,12 +11,25 @@ public class Animal {
     }
     public Animal(int aa){
         System.out.println("animal 有参构造");
-        legsCount = aa;
     }
-//    public void sleep(){
-//        System.out.println("go to sleep");
-//    }
-    public void eat(){
-        System.out.println("eat something");
+
+    public String getName() {
+        return name;
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public abstract void eat();
+
+
 }
