@@ -22,4 +22,20 @@ public class Dog extends Animal {
     public void spark(){
         System.out.println("汪汪！");
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Dog)) return false;
+        if (!super.equals(o)) return false;
+
+        Dog dog = (Dog) o;
+
+        return name != null ? name.equals(dog.name) : dog.name == null;
+    }
+
+//    @Override
+//    public int hashCode() {
+//        return name != null ? name.hashCode() : 0;
+//    }
 }

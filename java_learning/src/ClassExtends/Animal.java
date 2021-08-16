@@ -31,5 +31,21 @@ public abstract class Animal {
 
     public abstract void eat();
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Animal)) return false;
 
+        Animal animal = (Animal) o;
+
+        if (age != animal.age) return false;
+        return name != null ? name.equals(animal.name) : animal.name == null;
+    }
+
+//    @Override
+//    public int hashCode() {
+//        int result = name != null ? name.hashCode() : 0;
+//        result = 31 * result + age;
+//        return result;
+//    }
 }
