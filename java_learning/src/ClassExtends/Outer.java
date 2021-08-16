@@ -2,7 +2,7 @@ package ClassExtends;
 
 public class Outer {
     private int num = 10;
-    public class Inner{
+    private class Inner{
         public void show(){    //内部类可以直接访问外部类
             System.out.println("num:"+num);
         }
