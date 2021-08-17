@@ -1,18 +1,17 @@
-package ArrayList;
-
-import Basic.Student;
+package List;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.List;
 
 
 public class ArrayListBasic {
     public static void main(String[] args) {
-        ArrayList<String> array = new ArrayList<>();
+
+        List<String> array = new ArrayList<>();
         array.add("hello");
         array.add("world");
         array.add("world");
-        array.add("java");
+        array.add(3,"java");
         System.out.println("array: "+array);
 
         //删除元素object，返回true表示删除成功
@@ -31,15 +30,31 @@ public class ArrayListBasic {
         //返回长度
 //        System.out.println(array.size());
 
-        //遍历集合元素
+        ////遍历集合元素-----------------------
 //        for(int i = 0;i < array.size();i++){
 //            System.out.println(array.get(i));
 //        }
         //使用iterator遍历
-        Iterator<String> it = array.iterator();
-        while (it.hasNext()){
-            System.out.println(it.next());
+//        Iterator<String> it = array.iterator();
+//        while (it.hasNext()){
+//            System.out.println(it.next());
+//        }
+        //使用listIterator 顺、逆向
+//        ListIterator<String> listIt = array.listIterator();
+//        while(listIt.hasNext()){
+//            System.out.println(listIt.next());
+//        }
+//        System.out.println("------------");
+//        while(listIt.hasPrevious()){
+//            System.out.println(listIt.previous());
+//        }
+        //使用增强for遍历
+        for(String ele:array){
+            System.out.println(ele);
         }
+
+
+
 
         //创建学生集合,并show
 //        ArrayList<Student> arrayStd = new ArrayList<>();
