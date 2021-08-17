@@ -1,6 +1,7 @@
 package List;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -49,9 +50,9 @@ public class ArrayListBasic {
 //            System.out.println(listIt.previous());
 //        }
         //使用增强for遍历
-        for(String ele:array){
-            System.out.println(ele);
-        }
+//        for(String ele:array){
+//            System.out.println(ele);
+//        }
 
 
 
