@@ -1,8 +1,8 @@
 package List;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import Basic.Student;
+
+import java.util.*;
 
 
 public class ArrayListBasic {
@@ -54,9 +54,6 @@ public class ArrayListBasic {
 //            System.out.println(ele);
 //        }
 
-
-
-
         //创建学生集合,并show
 //        ArrayList<Student> arrayStd = new ArrayList<>();
 //        Student s1 = new Student("joey",8);
@@ -69,6 +66,25 @@ public class ArrayListBasic {
 //            Student st = arrayStd.get(i);
 //            st.show();
 //        }
+
+        //存储学生对象并排序
+        ArrayList<Student> arrayStd = new ArrayList<>();
+        Student s1 = new Student("joey",15);
+        Student s2 = new Student("monica",8);
+        Student s3 = new Student("rachel",13);
+        arrayStd.add(s1);
+        arrayStd.add(s2);
+        arrayStd.add(s3);
+        Collections.sort(arrayStd, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                int sub = o1.getAge()- o2.getAge();
+                return sub;
+            }
+        });
+        for (Student st : arrayStd){
+            System.out.println(st.getName()+","+st.getAge());
+        }
 
     }
 }
