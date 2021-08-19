@@ -41,10 +41,15 @@ public class FileBasic {
 //        System.out.println((char) by);
 
         //读完 可以不换行
-        int temp;
-        while((temp = fis.read()) != -1 ){
-            System.out.print((char) temp);
-        }
+//        int temp;
+//        while((temp = fis.read()) != -1 ){
+//            System.out.print((char) temp);
+//        }
+        //按字节数组读取
+        byte[] bys = new byte[20];
+        int len = fis.read(bys);
+        System.out.println(new String(bys,0,len));
+
 
         fis.close();
     }

@@ -1,10 +1,8 @@
 package IO;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
+// 用字节流复制、用fileWriter、fileReader定义（只是简化了定义过程，写入方式不变）+字符数组写入
 public class CopyFileContent {
     public static void main(String[] args) throws IOException {
         File co = new File("javaIO\\copyFrom.txt");
@@ -13,7 +11,7 @@ public class CopyFileContent {
         pa.createNewFile();
 
         FileOutputStream fos = new FileOutputStream(co);
-        fos.write("jyzdq".getBytes());
+        fos.write("jyzdqdsuhdagfiuegi".getBytes());
         fos.close();
 
         FileInputStream fis = new FileInputStream(co);
@@ -24,6 +22,18 @@ public class CopyFileContent {
         }
         fis.close();
         fos1.close();
+
+        FileReader fr = new FileReader("javaIO\\copyFrom.txt");
+        FileWriter fw = new FileWriter("javaIO\\copyTo.txt");
+        char[] chs = new char[1024];
+        int len;
+        while((len = fr.read(chs))!=-1){
+            fw.write(new String(chs,0,len));
+        }
+        fr.close();
+        fw.close();
+
+
     }
 
 }
