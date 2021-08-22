@@ -18,6 +18,7 @@ public class GameRandomCard {
         while ((line=br.readLine())!=null){
             cards.add(line);
         }
+        br.close();
 //        System.out.println(cards);
         Scanner sc = new Scanner(System.in);
         Random ra = new Random();
