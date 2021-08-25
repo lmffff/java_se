@@ -10,6 +10,13 @@ public class ThreadDemo {
 //        Thread.currentThread().setName("刘备");
 //        MyThread thread2 = new MyThread("关羽");
 //        MyThread thread3 = new MyThread("张飞");
+
+        //lambda表达式1
+//        new Thread(()-> System.out.println("lanbda表达式1")).start();
+        //lambda表达式2
+        Runnable r = () -> System.out.println("lambda表达式2");
+        new Thread(r).start();
+
 //
 //        //优先级
 ////        thread1.setPriority(10);
@@ -29,12 +36,12 @@ public class ThreadDemo {
 
 
         //第二种多线程创建方式
-        threadInterface ti = new threadInterface();
-        Thread interThread = new Thread(ti);
-        Thread interThread1 = new Thread(ti);
-
-        interThread.start();
-        interThread1.start();
+//        threadInterface ti = new threadInterface();
+//        Thread interThread = new Thread(ti);
+//        Thread interThread1 = new Thread(ti);
+//
+//        interThread.start();
+//        interThread1.start();
 
 
 
